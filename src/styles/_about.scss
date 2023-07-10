@@ -1,0 +1,31 @@
+.about {
+    &__content {
+        margin-top: 40px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: solid 1px #fff;
+        
+        &__img {
+            max-width: 400px;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                border: solid 4px #fff;
+                border-radius: 10px;
+            }
+        }
+
+        &__texts {
+            &__title{
+                border-bottom: solid 1px #fff;
+            }
+
+            &__text {
+                margin-top: 24px;
+                text-align: justify;
+            }
+        }
+    }
+}

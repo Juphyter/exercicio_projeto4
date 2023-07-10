@@ -1,5 +1,51 @@
-$bgColor: rgb(230, 176, 176);
+@use 'variaveis';
+@use 'hero';
+@use 'about';
+@use 'cast';
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+    list-style: none;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 24px auto;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corDoTexto;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corDoTitulo;
+}
+
+.title {
+    @include title(24px)
+}
+
+.title--big {
+    @include title(40px)
+}
+
+.text {
+    @include text(18px)
+}
+
+.text--small {
+    @include text(16px) 
 }

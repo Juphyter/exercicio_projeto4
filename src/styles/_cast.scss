@@ -1,0 +1,21 @@
+.cast {
+    &__title {
+
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        
+        &__item {
+            text-align: center;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.hero {
+    margin-bottom: 24px;
+    &__content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            padding:24px;
+        }
+
+        &__img {
+            width: 1024px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                margin: 10px auto;
+            }
+        }
+
+        &__text {
+            border-top: solid 1px #fff;
+            border-bottom: solid 1px #fff;
+            padding: 24px;
+        }
+    }
+}
