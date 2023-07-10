@@ -1,5 +1,8 @@
+@use 'variaveis';
+
 .hero {
     margin-bottom: 24px;
+    
     &__content {
         justify-content: center;
         align-items: center;
@@ -20,8 +23,8 @@
         }
 
         &__text {
-            border-top: solid 1px #fff;
-            border-bottom: solid 1px #fff;
+            border-top: solid 1px variaveis.$corDoTitulo;
+            border-bottom: solid 1px variaveis.$corDoTitulo;
             padding: 24px;
         }
     }
